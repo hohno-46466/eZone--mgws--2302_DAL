@@ -7,7 +7,7 @@ int LEDs[3] = {0, 0, 0};
 const int LEDpins[3] = {11, 10, 9};
 // pins for the Buttons
 boolean SWs[3] = {false, false, false};
-const int SWpins[3] = {A5, A4, A3};
+const int SWpins[3] = {A3, A4, A5};
 // pins for the Potentiometers
 int POTs[3] = {0, 0, 0};
 const int POTpins[3] = {A2, A1, A0};
