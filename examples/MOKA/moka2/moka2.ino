@@ -2,15 +2,15 @@
 // moka2.ino
 //
 
-// Last update: Sun Feb 19 05:58:36 AST 2023
+// Last update: Sun Feb 19 09:51:11 AST 2023
 
 const int SWpins[3] = {A5, A4, A3};
 
 void setup() {
   Serial.begin(57600);
-  pinMode(SWpins[0], INPUT);
-  pinMode(SWpins[1], INPUT);
-  pinMode(SWpins[2], INPUT);
+  pinMode(SWpins[0], INPUT_PULLUP);
+  pinMode(SWpins[1], INPUT_PULLUP);
+  pinMode(SWpins[2], INPUT_PULLUP);
 }
 
 void loop() {
