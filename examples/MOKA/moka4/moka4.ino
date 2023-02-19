@@ -1,6 +1,6 @@
 // moka4.ino
 
-// Last version: 2023-02-19 by @hohno_at_kuimc
+// Last update: Sun Feb 19 10:26:51 AST 2023
 
 // pins for the LEDs
 int LEDs[3] = {0, 0, 0};
