@@ -4,7 +4,7 @@
 
 // Last update: Sun Feb 19 09:51:11 AST 2023
 
-const int SWpins[3] = {A5, A4, A3};
+const int SWpins[3] = {A3, A4, A5};
 
 void setup() {
   Serial.begin(57600);
