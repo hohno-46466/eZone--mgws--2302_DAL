@@ -1,6 +1,4 @@
-//
 // moka2.ino
-//
 
 // Last update: Sun Feb 19 09:51:11 AST 2023
 

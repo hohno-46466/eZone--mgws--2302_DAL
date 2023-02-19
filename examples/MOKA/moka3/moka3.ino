@@ -1,17 +1,15 @@
-//
 // moka3.ino
-//
 
-// Last update: Sun Feb 19 06:01:25 AST 2023
+// Last update: Sun Feb 19 09:56:03 AST 2023
 
-const int SWpins[3] = {A5, A4, A3};
+const int SWpins[3] = {A3, A4, A5};
 int dummyNum = 100;
 
 void setup() {
   Serial.begin(57600);
-  pinMode(SWpins[0], INPUT);
-  pinMode(SWpins[1], INPUT);
-  pinMode(SWpins[2], INPUT);
+  pinMode(SWpins[0], INPUT_PULLUP);
+  pinMode(SWpins[1], INPUT_PULLUP);
+  pinMode(SWpins[2], INPUT_PULLUP);
   randomSeed(micros());
 }
 
