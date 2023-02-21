@@ -21,11 +21,12 @@ Monogramming Workshop 2302 at Dalhousie University
 
 - moka2 - Our second sketch lets you know how to read the status of the push buttons
 
-- moka3 - Our third sketch outputs three additional random values to the second sketch.
+- moka3 - Our third sketch outputs three sets of the status of the push button,
+the current value of potentiometer, and one random number.
 
 - moka4 - Our fourth sketch shows an example of reading three numbers from a serial port.
 
-- moka5 - Our fifth sketch combines the third and fourth sketches and also reads and outputs the values of the three potentiometers.
+- moka5 - Our fifth sketch combines the second and fourth sketches and also reads and outputs the values of the three potentiometers.
 
 - moka6 - TBA
 

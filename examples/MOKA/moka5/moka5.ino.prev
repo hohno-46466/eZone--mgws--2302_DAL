@@ -8,11 +8,11 @@ int LEDs[3] = {0, 0, 0};
 
 // pins for the Buttons
 const int SWpins[3] = {A3, A4, A5};
-// boolean SWs[3] = {false, false, false};
+boolean SWs[3] = {false, false, false};
 
 // pins for the Potentiometers
 const int POTpins[3] = {A0, A1, A2};
-// int POTs[3] = {0, 0, 0};
+int POTs[3] = {0, 0, 0};
 
 void setup() {
   // initialize serial:
@@ -25,13 +25,17 @@ void setup() {
 }
 
 void loop() {
+  // read Buttons and Potentiometers
+  for (int i = 0; i <= 2; i++) {
+    SWs[i] = digitalRead(SWpins[i]);
+    POTs[i] = analogRead(POTpins[i]);
+  }
   Serial.print("S/P\t");
   Serial.print(millis()); Serial.print("\t");
-
-  // print the six numbers (three sets of Buttons and Pots) in one string with TABs:
+  // print the six numbers in one string with TABs:
   for (int i = 0; i <= 2; i++) {
-    Serial.print(digitalRead(SWpins[i])); Serial.print("\t");
-    Serial.print(analogRead(POTpins[i])); Serial.print("\t");
+    Serial.print(SWs[i]); Serial.print("\t");
+    Serial.print(POTs[i]); Serial.print("\t");
   }
   Serial.println();
 
@@ -57,3 +61,4 @@ void loop() {
   } else {
     delay(200);
   }
+}
