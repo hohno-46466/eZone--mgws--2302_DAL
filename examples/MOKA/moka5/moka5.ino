@@ -25,7 +25,7 @@ void setup() {
 }
 
 void loop() {
-  Serial.print("S/P\t");
+  Serial.print("Sw/Pot\t");
   Serial.print(millis()); Serial.print("\t");
 
   // print the six numbers (three sets of Buttons and Pots) in one string with TABs:
@@ -57,3 +57,4 @@ void loop() {
   } else {
     delay(200);
   }
+}
