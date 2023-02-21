@@ -2,7 +2,7 @@
 
 // Last update: Tue Feb 21 02:54:19 AST 2023
 
-int dummyNum = 100;
+long dummyNum = 100;
 const int SWpins[3] = {A3, A4, A5};
 const int POTpins[3] = {A0, A1, A2};
 
