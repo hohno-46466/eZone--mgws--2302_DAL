@@ -2,10 +2,15 @@
 
 # pseudoAlice3.sh
 
+# Last update: Wed Mar  1 07:19:00 AST 2023
+
+(which -a jot > /dev/null 2>&1 || (echo "We need jot command to run this $0"; exit 1)) || exit 1
+
+key="PseudoAlice3"
+
 cnt=0
 Pr=512; Pg=512; Pb=512
 Xr=0; Xg=0; Xb=0
-kwd="PseudoAlice3"
 
 while [ 1 ]; do
   cnt=$(expr $cnt + 1000 + $(jot -r 1 -5 5));
@@ -21,6 +26,7 @@ while [ 1 ]; do
   Sb=$(jot -r 1 0 13); if [ $Sb -le 4 ]; then Sb=0; else Sb=1; fi
   Pb=$(expr $Pb + $(jot -r 1 -31 31)); [ $Pb -lt 0 ] && Pb=0; [ $Pb -gt 1023 ] && Pb=1023;
   Xb=$(expr $Xb + $(jot -r 1 -50 50));
-  echo "$kwd\t$cnt\t$Sr\t$Pr\t$Xr\t$Sg\t$Pg\t$Xg\t$Sb\t$Pb\t$Xb"
+
+  echo "$key\t$cnt\t$Sr\t$Pr\t$Xr\t$Sg\t$Pg\t$Xg\t$Sb\t$Pb\t$Xb"
   sleep 1
 done
